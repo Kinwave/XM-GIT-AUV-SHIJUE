@@ -70,3 +70,4 @@ void usart_send(int send)
 }
 
 */
+//¥Ú¡À∂‡æ√∞°
