@@ -38,6 +38,9 @@ int main()
 	
 	VideoCapture capture(1);//图像尺寸640,480
 
+	//树莓派去掉该注释ofstream opencvGet;
+	//树莓派去掉该注释opencvGet.open("opencv_get.txt");
+
 	while (1)
 	{		
 		Mat read_film;
@@ -52,6 +55,9 @@ int main()
 		waitKey(50);
 		image_processing(Origin_Image, binnary_smooth_Image, Size(640, 480), 0, 1);
 		//on_ThreshChange(binnary_smooth_Image);
+		//树莓派去掉该注释opencvGet << xiangxian << " ";
+		//树莓派去掉该注释opencvGet << out_x << " ";
+		//树莓派去掉该注释opencvGet << out_y << endl;
         waitKey(50);
 	}
 	return(0);
