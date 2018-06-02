@@ -124,7 +124,7 @@
   <ItemGroup>
     <ClCompile Include="camera_basic.cpp" />
     <ClCompile Include="image_processing.cpp" />
-    <ClCompile Include="light_teack.cpp" />
+    <ClCompile Include="light_track.cpp" />
     <ClCompile Include="light_track.h" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="network.cpp" />
@@ -134,6 +134,7 @@
   <ItemGroup>
     <ClInclude Include="camera_basic.h" />
     <ClInclude Include="image_processing.h" />
+    <ClInclude Include="main.h" />
     <ClInclude Include="network.h" />
     <ClInclude Include="pi_usart.h" />
     <ClInclude Include="sort.h" />

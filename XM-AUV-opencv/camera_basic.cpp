@@ -1,6 +1,6 @@
 #include "camera_basic.h"
 
-void camera_read(Mat& src, Mat& dst, Size size, int camera_read_time, int read_image_show)
+void camera_read(Mat& src, Mat& dst, Size size, int camera_read_time, int read_image)
 {
 	// 加载源图像
 	if (!src.data) 
@@ -8,7 +8,7 @@ void camera_read(Mat& src, Mat& dst, Size size, int camera_read_time, int read_i
 		printf("读取图片错误，请确定目录下是否有imread函数指定的图片存在~！ \n"); 
 	}
 	resize(src, dst, size);
-	if (read_image_show==1)
+	if (read_image)
 	{
 		namedWindow("视频", 0);
 		resizeWindow("视频", size.width, size.height);
