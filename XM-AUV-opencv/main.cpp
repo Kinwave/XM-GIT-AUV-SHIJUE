@@ -30,7 +30,7 @@ Mat read_film_result;
 
 int main()
 {
-	#ifdef _if_run_by_pi
+	#ifdef _if_run_in_pi
 		usart_pthread_start(115200);
 		network_pthread_start();
 		ofstream opencvGet;
@@ -60,7 +60,7 @@ int main()
 			identify_writer << read_film_result;
 		}
 
-		#ifdef _if_run_by_pi
+		#ifdef _if_run_in_pi
 			opencvGet << xiangxian << " ";
 			opencvGet << out_x << " ";
 			opencvGet << out_y << endl;

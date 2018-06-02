@@ -1,4 +1,6 @@
-#ifdef _if_run_by_pi
+#include "pi_usart.h"
+
+#ifdef _if_run_in_pi
 
 	#include <iostream>
 	#include <sstream>
@@ -10,7 +12,7 @@
 	#include <string>
 	#include <unistd.h>
 	#include "pthread.h"
-	#include "pi_usart.h"
+	
 
 	using namespace std;
 

@@ -1,4 +1,6 @@
-#ifdef _if_run_by_pi
+#include "network.h"
+
+#ifdef _if_run_in_pi
 	#include <sys/socket.h>  
 	#include <netinet/in.h>
 	#include <arpa/inet.h>  
@@ -13,7 +15,6 @@
 	#include <fstream>
 	#include <iomanip>
 
-	#include "network.h"
 	#include <pthread.h>
 	#include "pi_usart.h"
 

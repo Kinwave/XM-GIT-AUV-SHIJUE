@@ -120,7 +120,7 @@ void on_ThreshChange(Mat& src, int result_image,int orign_result_image)
 						out_y = int((center[circle_select].y - 240) / 2);
 					}
 				}
-				#ifdef _if_run_by_pi
+				#ifdef _if_run_in_pi
 					usart_send(0x0B);
 					usart_send(xiangxian);
 					usart_send(out_x);
